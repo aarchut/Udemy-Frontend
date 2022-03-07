@@ -2,11 +2,9 @@
     <nav class="navbar-sidebar">
         <ul class="list-unstyled navbar-list">
 
-            <li *NgFor="let tempProductCategory of productCategories">
+            <li *ngFor="let tempProductCategory of productCategories">
 
-                <a routerLink="/category/{{ tempProductCategory.id }}" routerLinkActive="active-link">
-                    {{ tempProductCategory.categoryName }}
-                </a>
+                <a routerLink="/category/{{ tempProductCategory.id }}" routerLinkActive="active-link">{{ tempProductCategory.categoryName }}</a>
                 
             </li>
 
